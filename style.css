@@ -66,6 +66,9 @@ body {
 	cursor: pointer;
 }
 
+.box-input .input-item .input:hover {
+	border: 1px solid hsl(259, 100%, 65%);
+}
 
 .box-input .input-item .error-input {
 	border: 1px solid hsl(0, 100%, 67%);
@@ -75,7 +78,7 @@ body {
 	color: hsl(0, 100%, 67%);
 	font-weight: 400;
 	font-style: italic;
-	font-size: .8rem;
+	font-size: 0.8rem;
 }
 
 .line {
@@ -98,6 +101,7 @@ body {
 	border-radius: 50%;
 	cursor: pointer;
 }
+
 .line .arrow:hover {
 	background-color: hsl(0, 0%, 8%);
 }
@@ -128,43 +132,51 @@ body {
 }
 
 .attribution {
-	margin-top: 5em;
+	margin-top: 2em;
 }
 
 @media (min-width: 700px) {
 	.container {
-		width: 480px;
-		border-bottom-right-radius: 95px;
+		width: 620px;
+		border-bottom-right-radius: 140px;
 	}
 	.box-input {
 		justify-content: flex-start;
 		width: 100%;
 		margin: 1em 0em 0em 4em;
 	}
-    .box-input .input-item {
-        margin: 0 .7em;
+	.box-input .input-item {
+		margin: 0 0.7em;
 	}
 	.box-input .input-item:first-of-type {
-		margin-left: 0;
+		margin-left: 0.7em;
 	}
 	.box-input .input-item .input {
-		margin: 0.2em 0;
+		margin: 0.3em 0;
 		padding: 0.7em 0em 0.7em 0.7em;
-		width: 90px;
+		width: 115px;
+		height: 53px;
+		font-size: 2.2rem;
 	}
 	.box-input .input-item .error {
-		font-size: .9rem;
+		font-size: 1rem;
 	}
 	.line .arrow {
 		position: absolute;
-		left: 95%;
-		transform: translate(-50%);
-		width: 50px;
-		height: 50px;
+		left: 87%;
+		top: -50%;
+		transform: translateY(-50%);
+		width: 70px;
+		height: 70px;
+	}
+	.line .arrow img {
+		top: 25%;
+		width: 35px;
+		height: 35px;
 	}
 	.result-box {
-		padding: 0em 0.5em 0.5em 0.5em;
+		padding: 0em 0.5em 0.6em 0.6em;
 		width: 100%;
-		font-size: 5rem;
+		font-size: 8rem;
 	}
 }
